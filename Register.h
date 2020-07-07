@@ -29,7 +29,7 @@
 #define XDDRD  *((volatile u_int8 * const)0x31)
 #define XPIND  *((volatile u_int8 * const)0x30)
 /*****************/
-
+#define Mahmoud 0
 
 
 
