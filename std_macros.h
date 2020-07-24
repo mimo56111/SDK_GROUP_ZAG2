@@ -13,6 +13,6 @@
 #define CLR_BIT(reg,Bit) reg&=(~(1<<Bit))
 #define Toggle_Bit(reg,Bit) reg^=(1<<Bit)
 #define Read_Bit(reg,Bit)  ((reg&(1<<Bit))>>Bit)
-
+#define IS_BIT_CLR(reg,Bit) !((reg&(1<<Bit))>>Bit)
 
 #endif /* STD_MACROS_H_ */

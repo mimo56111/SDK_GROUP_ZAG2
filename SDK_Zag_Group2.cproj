@@ -67,6 +67,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ADC_MCAL.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ADC_MCAL.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Data_Type.h">
       <SubType>compile</SubType>
     </Compile>
@@ -74,6 +80,24 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="GPIO.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Internal_EEPROM_MCAL.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Internal_EEPROM_MCAL.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Keypad_ECU.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Keypad_ECU.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCD_ECU.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCD_ECU.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="LED_ECU_deiver.c">

@@ -35,7 +35,11 @@ SUBDIRS :=
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
+../ADC_MCAL.c \
 ../GPIO.c \
+../Internal_EEPROM_MCAL.c \
+../Keypad_ECU.c \
+../LCD_ECU.c \
 ../LED_ECU_deiver.c \
 ../SDK_Zag_Group2.c \
 ../Seven_segment_ECU.c \
@@ -49,7 +53,11 @@ ASM_SRCS +=
 
 
 OBJS +=  \
+ADC_MCAL.o \
 GPIO.o \
+Internal_EEPROM_MCAL.o \
+Keypad_ECU.o \
+LCD_ECU.o \
 LED_ECU_deiver.o \
 SDK_Zag_Group2.o \
 Seven_segment_ECU.o \
@@ -57,7 +65,11 @@ Switch_ECU_driver.o
 
 
 OBJS_AS_ARGS +=  \
+ADC_MCAL.o \
 GPIO.o \
+Internal_EEPROM_MCAL.o \
+Keypad_ECU.o \
+LCD_ECU.o \
 LED_ECU_deiver.o \
 SDK_Zag_Group2.o \
 Seven_segment_ECU.o \
@@ -65,7 +77,11 @@ Switch_ECU_driver.o
 
 
 C_DEPS +=  \
+ADC_MCAL.d \
 GPIO.d \
+Internal_EEPROM_MCAL.d \
+Keypad_ECU.d \
+LCD_ECU.d \
 LED_ECU_deiver.d \
 SDK_Zag_Group2.d \
 Seven_segment_ECU.d \
@@ -73,7 +89,11 @@ Switch_ECU_driver.d
 
 
 C_DEPS_AS_ARGS +=  \
+ADC_MCAL.d \
 GPIO.d \
+Internal_EEPROM_MCAL.d \
+Keypad_ECU.d \
+LCD_ECU.d \
 LED_ECU_deiver.d \
 SDK_Zag_Group2.d \
 Seven_segment_ECU.d \
@@ -89,6 +109,14 @@ ADDITIONAL_DEPENDENCIES:=
 OUTPUT_FILE_DEP:= ./makedep.mk
 
 # AVR32/GNU C Compiler
+
+
+
+
+
+
+
+
 
 
 

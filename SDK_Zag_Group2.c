@@ -9,18 +9,26 @@
 #include "LED_ECU_driver.h"
 #include "Switch_ECU_driver.h"
 #include "Data_Type.h"
+#include "Register.h"
+#include "Internal_EEPROM_MCAL.h"
+#include "LCD_ECU.h"
+#include "Keypad_ECU.h"
+#include <avr/interrupt.h>
 #define F_CPU 8000000UL
 #include <util/delay.h>
 int main(void){
-	LED_vInit('A',6);
-	Switch_vInit('D',1);
-    while(1){
-        if (Switch_u8Read('D',1)==0){
-			LED_von('A',6);
-			_delay_ms(300);
-			LED_voff('A',6);
-        }else{
-			LED_voff('A',6);
-		}
+	OBJ x;
+	LCD_Get_config(&x,EIGHT_BIT,HIGH_NIBBLE,'A','B',0,'B',1,'B',2);
+	LCD_vInit();
+	Keypad_vInit('C');
+    u_int8 y;
+	while(1){
+		y = Keypad_u8check_press('C');
+		while(y != NOTPRESSED){
+			LCD_vsend_char(y);
+			_delay_ms(500);
+			y=NOTPRESSED;
+		}   
+		
     }
 }
