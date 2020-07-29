@@ -35,16 +35,16 @@
 #define  INT0 6
 #define  INT0 5
 #define XMCUCR *((volatile u_int8 * const)0x55)
-#define	 ISC00 0
-#define	 ISC01 1
-#define  ISC10 2
-#define  ISC11 3
+#define ISC00 0
+#define ISC01 1
+#define ISC10 2
+#define ISC11 3
 #define XMCUCSR  *((volatile u_int8 * const)0x54)
-#define  ISC2 6
+#define ISC2 6
 #define XGIFR  *((volatile u_int8 * const)0x5A)
-#define  INTF1 7
-#define  INTF0 6
-#define  INTF2 5
+#define INTF1 7
+#define INTF0 6
+#define INTF2 5
 #define XSREG  *((volatile u_int8 * const)0x5F)
 /*****************************************************/
 /***********Internal EEPROM************************/
@@ -52,54 +52,9 @@
 #define XEEARL *((volatile u_int8 * const)0x3E)
 #define XEEDR  *((volatile u_int8 * const)0x3D)
 #define XEECR  *((volatile u_int8 * const)0x3C)
-#define  EERE 0
-#define  EEWE 1
-#define  EEMWE 2
-#define  EERIE 3
+#define EERE 0
+#define EEWE 1
+#define EEMWE 2
+#define EERIE 3
 /****************************************************/
-/***************ADC Registers************************/
-#define XADMUX *((volatile u_int8 * const)0x27)
-#define  MUX0 0
-#define  MUX1 1
-#define  MUX2 2
-#define  MUX3 3
-#define  MUX4 4
-#define  ADLAR 5
-#define  REFS0 6
-#define  REFS1 7
-#define XADCSRA *((volatile u_int8 * const)0x26)
-#define  ADPS0 0
-#define  ADPS1 1
-#define  ADPS2 2
-#define  ADIE 3
-#define  ADIF 4
-#define  ADATE 5
-#define  ADSC 6
-#define  ADEN 7
-#define XADCH *((volatile u_int8 * const)0x25)
-#define XADCL *((volatile u_int8 * const)0x24)
-#define XSFIOR *((volatile u_int8 * const)0x50)
-#define  PUD 2
-#define  ADTS0 5
-#define  ADTS1 6
-#define  ADTS2 7
-/**************************************************/
-/**********************Timer***********************/
-#define XTCNT0  *((volatile u_int8 * const)0x52)
-#define XTCCR0  *((volatile u_int8 * const)0x53)
-#define  FOC0 7
-#define  WGM00 6
-#define  COM01 5
-#define  COM00 4
-#define  WGM01 3 
-#define  CS02  2
-#define  CS01  1
-#define  CS00  0
-#define XTIFR  *((volatile u_int8 * const)0x58)
-#define  TOV0 0
-#define  OCF0 1
-#define XTIMASK  *((volatile u_int8 * const)0x59)
-#define  TOIE0 0
-#define  OCIE0 1
-#define XOCR0  *((volatile u_int8 * const)0x5C)
 #endif /* REGISTER_H_ */

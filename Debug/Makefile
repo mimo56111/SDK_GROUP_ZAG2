@@ -43,7 +43,8 @@ C_SRCS +=  \
 ../LED_ECU_deiver.c \
 ../SDK_Zag_Group2.c \
 ../Seven_segment_ECU.c \
-../Switch_ECU_driver.c
+../Switch_ECU_driver.c \
+../Timer_MCAL.c
 
 
 PREPROCESSING_SRCS += 
@@ -61,7 +62,8 @@ LCD_ECU.o \
 LED_ECU_deiver.o \
 SDK_Zag_Group2.o \
 Seven_segment_ECU.o \
-Switch_ECU_driver.o
+Switch_ECU_driver.o \
+Timer_MCAL.o
 
 
 OBJS_AS_ARGS +=  \
@@ -73,7 +75,8 @@ LCD_ECU.o \
 LED_ECU_deiver.o \
 SDK_Zag_Group2.o \
 Seven_segment_ECU.o \
-Switch_ECU_driver.o
+Switch_ECU_driver.o \
+Timer_MCAL.o
 
 
 C_DEPS +=  \
@@ -85,7 +88,8 @@ LCD_ECU.d \
 LED_ECU_deiver.d \
 SDK_Zag_Group2.d \
 Seven_segment_ECU.d \
-Switch_ECU_driver.d
+Switch_ECU_driver.d \
+Timer_MCAL.d
 
 
 C_DEPS_AS_ARGS +=  \
@@ -97,7 +101,8 @@ LCD_ECU.d \
 LED_ECU_deiver.d \
 SDK_Zag_Group2.d \
 Seven_segment_ECU.d \
-Switch_ECU_driver.d
+Switch_ECU_driver.d \
+Timer_MCAL.d
 
 
 OUTPUT_FILE_PATH +=SDK_Zag_Group2.elf
@@ -109,6 +114,8 @@ ADDITIONAL_DEPENDENCIES:=
 OUTPUT_FILE_DEP:= ./makedep.mk
 
 # AVR32/GNU C Compiler
+
+
 
 
 

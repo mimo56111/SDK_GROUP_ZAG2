@@ -13,22 +13,14 @@
 #include "Internal_EEPROM_MCAL.h"
 #include "LCD_ECU.h"
 #include "Keypad_ECU.h"
+#include "ADC_MCAL.h"
 #include <avr/interrupt.h>
 #define F_CPU 8000000UL
 #include <util/delay.h>
+#include "Timer_MCAL.h"
 int main(void){
-	OBJ x;
-	LCD_Get_config(&x,EIGHT_BIT,HIGH_NIBBLE,'A','B',0,'B',1,'B',2);
-	LCD_vInit();
-	Keypad_vInit('C');
-    u_int8 y;
+	
 	while(1){
-		y = Keypad_u8check_press('C');
-		while(y != NOTPRESSED){
-			LCD_vsend_char(y);
-			_delay_ms(500);
-			y=NOTPRESSED;
-		}   
 		
     }
 }
